@@ -13,20 +13,20 @@
       <form action="https://hotel-feedback.freecodecamp.org" method="POST">
         <fieldset>
           <legend>Personal Information</legend>
-          
+          <!-- text -->
           <label for="full-name">Name (required):</label>
           <input type="text" id="full-name" name="name" placeholder="e.g., John Doe" required size="20">
-
+          <!-- email -->
           <label for="email">Email address (required):</label>
           <input type="email" name="email" id="email" placeholder="example@email.com" required size="20">
-
+          <!-- number -->
           <label for="age">Age (optional):</label>
           <input type="number" name="age" id="age" min="3" max="100">
         </fieldset>
 
         <fieldset>
           <legend>Was this your first time at our hotel?</legend>
-
+          <!-- radio -->
           <input type="radio" name="hotel-stay" id="yes-option" value="yes">
           <label for="yes-option">Yes</label>
           <input type="radio" name="hotel-stay" id="no-option" value="no">
@@ -35,6 +35,7 @@
 
         <fieldset>
           <legend>Why did you choose to stay at our hotel? (Check all that apply)</legend>
+          <!-- checkbox -->
           <input type="checkbox" name="choice" id="ads" value="ads">
           <label for="ads">Social Media Ads</label>
           <input type="checkbox" name="choice" id="recommendation" value="recommendation">
@@ -49,6 +50,7 @@
 
         <fieldset>
           <legend>Ratings</legend>
+          <!-- select -->
           <label for="service">How was the service?</label>
           <select name="service" id="service">
             <option value="poor">Poor</option>
@@ -65,9 +67,11 @@
             <option value="very-good">Very Good</option>
             <option value="excellent" selected>Excellent</option>
           </select>
-
+          <!-- textarea -->
           <label for="comments">Other Comments?</label>
           <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+          <!-- submit -->
+          <button type="submit">Submit</button>
         </fieldset>
       </form>
     </main>
