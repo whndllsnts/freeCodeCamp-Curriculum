@@ -13,16 +13,17 @@ h1, h2, p {
     margin-right: auto;
 }
 
+.item p {
+    display: inline-block;
+}
+
 .flavor {
     text-align: left;
-    width: 50%;
+    width: 49%;
 }
 
 .price {
     text-align: right;
-    width: 50%;
+    width: 49%;
 }
 
-.item p {
-    display: inline-block;
-}
