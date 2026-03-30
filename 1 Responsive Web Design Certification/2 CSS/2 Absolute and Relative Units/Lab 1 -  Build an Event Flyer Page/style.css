@@ -1,0 +1,18 @@
+body {
+  /* Top/Bottom padding 50px */
+  padding: 50px 0; 
+  
+  /* Top/Bottom margin 0, Left/Right auto (centers it) */
+  margin: 0 auto; 
+  
+  /* Width relative to viewport */
+  width: 80vw; 
+  
+  /* min-height: 100vh minus total padding (50px top + 50px bottom = 100px) */
+  min-height: calc(100vh - 100px);
+}
+
+/* Width set to a percent value relative to parent */
+section, hr {
+  width: 90%;
+}
