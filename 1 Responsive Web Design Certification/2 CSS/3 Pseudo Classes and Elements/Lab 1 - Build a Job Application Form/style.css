@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  color: #111;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  color: #111;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  color: #333;
+  background: #fff;
+  margin-bottom: 1rem;
+}
+
+input:focus, textarea:focus {
+  border-color: #c0392b;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+  border-color: red;
+}
+
+input:valid, select:valid, textarea:valid {
+  border-color: green;
+}
+
+input:first-of-type {
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.radio-group {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.radio-group legend {
+  font-size: 0.95rem;
+  color: #111;
+  padding: 0 2px;
+}
+
+.radio-group label {
+  font-weight: normal;
+  margin-bottom: 0;
+  cursor: pointer;
+  color: #111;
+}
+
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin-bottom: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: green;
+  background-color: green;
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: green;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  background-color: #27ae60;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.3rem;
+}
+
+button:hover {
+  background-color: #219a52;
+}
